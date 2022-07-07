@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+:root {
+  --gray: #ddd;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.m-1 {
+  margin: 3em;
+}
+
+.book-card {
+  padding: 2em;
+  border: 1px solid var(--gray);
+}
+
+.book-card-item {
+  width: 40%;
+}

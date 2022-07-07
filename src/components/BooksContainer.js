@@ -8,7 +8,7 @@ class BooksContainer extends React.Component {
       books: [
         {
           id: 1,
-          catId: 1,
+          cat: 'Action',
           title: 'The Hunger Games',
           author: 'Suzzane Collins',
           comments: [],
@@ -18,7 +18,7 @@ class BooksContainer extends React.Component {
         },
         {
           id: 2,
-          catId: 2,
+          cat: 'Science Fiction',
           title: 'Dune',
           author: 'Frank Herbert',
           comments: [],
@@ -28,7 +28,7 @@ class BooksContainer extends React.Component {
         },
         {
           id: 3,
-          catId: 2,
+          cat: 'Economy',
           title: 'Capital in the 21st Century',
           author: 'Suzzane Collins',
           comments: [],
