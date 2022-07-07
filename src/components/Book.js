@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Action from './Action';
 
 class Book extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class Book extends React.Component {
             <li><h2>{title}</h2></li>
             <li>{author}</li>
           </ul>
+          <Action />
         </div>
 
         <div className="d-flex space-between book-card-item">

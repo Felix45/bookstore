@@ -11,6 +11,7 @@ li {
 
 :root {
   --gray: #ddd;
+  --blue: dodgerblue;
 }
 
 .d-flex {
@@ -37,4 +38,20 @@ li {
 
 .book-card-item {
   width: 40%;
+}
+
+.action-list li {
+  color: var(--blue);
+  margin-top: 1em;
+  padding-right: 1em;
+}
+
+.action-list li:nth-of-type(2n),
+.action-list li:last-child {
+  padding: 0 1em;
+}
+
+.action-list li:nth-of-type(2n) {
+  border-left: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
 }
