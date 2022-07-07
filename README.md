@@ -2,7 +2,7 @@
 
 # Bookstore CMS
 
-> Is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with React JS, Redux and CSS.
+> This is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with React JS, Redux and CSS.
 
 ## Built With
 
@@ -11,7 +11,7 @@
 - JavaScript
 
 ## Live Demo
-| Heroku hosting | Netlify hosting |
+| Heroku cloud hosting | Netlify clound hosting |
 |--------|---------|
 |[Heroku demo link](https://bookstore.herokuapp.com/) |[Netlify demo link](https://bookstore.netlify.app/)|
 
