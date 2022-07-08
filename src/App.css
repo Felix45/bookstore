@@ -9,6 +9,29 @@ li {
   list-style-type: none;
 }
 
+.align-center {
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 1em;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.user-profile {
+  width: 40px;
+  text-align: end;
+  justify-content: center;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+}
+
 :root {
   --gray: #ddd;
   --blue: dodgerblue;
