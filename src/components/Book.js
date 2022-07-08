@@ -26,7 +26,8 @@ class Book extends React.Component {
         </div>
 
         <div className="d-flex space-between book-card-item">
-          <div>
+          <div className="d-flex">
+            <span className="progress" />
             {progress}
             %
             {' '}
