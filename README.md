@@ -11,9 +11,7 @@
 - JavaScript
 
 ## Live Demo
-| Heroku cloud hosting | Netlify clound hosting |
-|--------|---------|
-|[Heroku demo link](https://bookstore.herokuapp.com/) |[Netlify demo link](https://bookstore.netlify.app/)|
+- No live demo yet
 
 ## Getting Started
 
