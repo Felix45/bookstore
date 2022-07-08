@@ -23,6 +23,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+form input[type=text] {
+  width: 45%;
+}
+
 .user-profile {
   width: 40px;
   text-align: end;
@@ -33,8 +37,13 @@ nav ul li a {
 }
 
 :root {
+  --white: #fff;
   --gray: #ddd;
   --blue: dodgerblue;
+}
+
+.container-fluid {
+  width: 100%;
 }
 
 .d-flex {
@@ -52,6 +61,26 @@ nav ul li a {
 
 .m-1 {
   margin: 3em;
+}
+
+.m-t-1 {
+  margin-top: 1em;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.title {
+  padding: 1em 0;
+  color: var(--gray);
+  border-top: 2px solid var(--gray);
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 .book-card {

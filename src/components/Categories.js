@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Categories = () => (
-  <h1 className="book-card d-flex space-between m-1">Coming Soon</h1>
+  <div className="book-card m-1 d-flex">
+    <button type="button">Check Status</button>
+  </div>
 );
 
 export default Categories;

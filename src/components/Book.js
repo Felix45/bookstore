@@ -43,7 +43,7 @@ class Book extends React.Component {
               {chapterTitle}
             </div>
             <div>
-              <button type="button">Update Progress</button>
+              <button className="m-t-1" type="button">Update Progress</button>
             </div>
           </div>
         </div>
