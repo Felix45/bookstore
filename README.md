@@ -13,7 +13,7 @@
 ## Live Demo
 |Netlify cloud hosting|
 |----------------------|
-|[Online demo link](https://bookstore-appl.netlify.app/books)|
+|[Online demo link](https://bookstore-appl.netlify.app/)|
 
 ## Getting Started
 
