@@ -11,7 +11,9 @@
 - JavaScript
 
 ## Live Demo
-- No live demo yet
+|Netlify cloud hosting|
+|----------------------|
+|[Online demo link](https://bookstore-appl.netlify.app/books)|
 
 ## Getting Started
 
