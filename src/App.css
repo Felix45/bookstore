@@ -103,18 +103,21 @@ form input[type=text] {
   width: 40%;
 }
 
-.action-list li {
+.action-list li button {
+  border: none;
+  cursor: pointer;
   color: var(--blue);
   margin-top: 1em;
   padding-right: 1em;
+  background-color: var(--white);
 }
 
-.action-list li:nth-of-type(2n),
-.action-list li:last-child {
+.action-list li:nth-of-type(2n) button,
+.action-list li:last-child button {
   padding: 0 1em;
 }
 
-.action-list li:nth-of-type(2n) {
+.action-list li:nth-of-type(2n) button {
   border-left: 1px solid var(--gray);
   border-right: 1px solid var(--gray);
 }
