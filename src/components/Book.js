@@ -11,7 +11,7 @@ class Book extends React.Component {
   render() {
     const { book } = this.props;
     const {
-      title, author, progress, currentChapter, cat,
+      id, title, author, progress, currentChapter, cat,
     } = book;
     const { chapter, chapterTitle } = currentChapter;
     return (
@@ -22,7 +22,7 @@ class Book extends React.Component {
             <li><h2>{title}</h2></li>
             <li>{author}</li>
           </ul>
-          <Action />
+          <Action id={id} />
         </div>
 
         <div className="d-flex space-between book-card-item">
@@ -55,6 +55,7 @@ class Book extends React.Component {
 
 Book.propTypes = {
   book: PropTypes.instanceOf(Object).isRequired,
+  id: PropTypes.string.isRequired,
   cat: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
