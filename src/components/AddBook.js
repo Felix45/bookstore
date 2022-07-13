@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { createBook } from '../redux/books/books';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
@@ -12,15 +12,11 @@ const AddBook = () => {
     event.preventDefault();
 
     if (title !== '' && author !== '') {
-      dispatch(addBook({
-        id: uuidv4(),
-        cat: 'Computer Science',
+      dispatch(createBook({
+        item_id: uuidv4(),
+        category: 'Computer Science',
         title,
         author,
-        comments: [],
-        progress: 0,
-        chapters: 20,
-        currentChapter: {},
       }));
     }
     setTitle('');

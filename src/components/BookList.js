@@ -2,22 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Book from './Book';
 
-class BookList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const BookList = (props) => {
+  const { books } = props;
 
-  render() {
-    const { books } = this.props;
-    return (
-      books.map((book) => <Book key={book.id} book={book} />)
-    );
-  }
-}
+  return (
+    Object.keys(books).map((id) => <Book key={id} book={books[id]} id={id} />)
+  );
+};
 
 BookList.propTypes = {
-  books: PropTypes.instanceOf(Array).isRequired,
+  books: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default BookList;
