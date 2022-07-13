@@ -9,16 +9,15 @@ class Book extends React.Component {
   }
 
   render() {
-    const { book } = this.props;
+    const { book, id } = this.props;
     const {
-      id, title, author, progress, currentChapter, cat,
-    } = book;
-    const { chapter, chapterTitle } = currentChapter;
+      title, author, category,
+    } = book[0];
     return (
       <li className="book-card d-flex space-between m-1">
         <div>
           <ul>
-            <li>{cat}</li>
+            <li>{category}</li>
             <li><h2>{title}</h2></li>
             <li>{author}</li>
           </ul>
@@ -28,7 +27,7 @@ class Book extends React.Component {
         <div className="d-flex space-between book-card-item">
           <div className="d-flex">
             <span className="progress" />
-            {progress}
+            {20}
             %
             {' '}
             <br />
@@ -39,9 +38,9 @@ class Book extends React.Component {
             <h4>CURRENT CHAPTER</h4>
             <div>
               Chapter
-              {chapter}
+              {1}
               :
-              {chapterTitle}
+              Unknown
             </div>
             <div>
               <button className="m-t-1" type="button">Update Progress</button>
@@ -53,16 +52,19 @@ class Book extends React.Component {
   }
 }
 
+Book.defaultProps = {
+  id: '',
+  category: '',
+  title: '',
+  author: '',
+};
+
 Book.propTypes = {
   book: PropTypes.instanceOf(Object).isRequired,
-  id: PropTypes.string.isRequired,
-  cat: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  progress: PropTypes.number.isRequired,
-  currentChapter: PropTypes.number.isRequired,
-  chapter: PropTypes.number.isRequired,
-  chapterTitle: PropTypes.string.isRequired,
+  id: PropTypes.string,
+  category: PropTypes.string,
+  title: PropTypes.string,
+  author: PropTypes.string,
 };
 
 export default Book;

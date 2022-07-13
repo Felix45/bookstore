@@ -1,23 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
 import Book from './Book';
+import { fetchBooks } from '../redux/books/books';
 
-class BookList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const BookList = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, []);
 
-  render() {
-    const { books } = this.props;
-    return (
-      books.map((book) => <Book key={book.id} book={book} />)
-    );
-  }
-}
+  const books = useSelector((state) => state.books);
+
+  return (
+    Object.keys(books).map((id) => <Book key={id} book={books[id]} id={id} />)
+  );
+};
 
 BookList.propTypes = {
-  books: PropTypes.instanceOf(Array).isRequired,
+  books: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default BookList;
