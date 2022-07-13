@@ -1,16 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
 import Book from './Book';
-import { fetchBooks } from '../redux/books/books';
 
-const BookList = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchBooks());
-  }, []);
-
-  const books = useSelector((state) => state.books);
+const BookList = (props) => {
+  const { books } = props;
 
   return (
     Object.keys(books).map((id) => <Book key={id} book={books[id]} id={id} />)
