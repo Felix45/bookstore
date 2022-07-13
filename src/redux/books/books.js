@@ -24,6 +24,16 @@ export const createBook = (book) => async (dispatch) => {
   }).then(() => dispatch(fetchBooks()));
 };
 
+export const deleteBook = (id) => async (dispatch) => {
+  const DELETE_URL = `${BASE_URL}/${id}`;
+
+  await fetch(DELETE_URL, {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ id }),
+  }).then(() => dispatch(fetchBooks()));
+};
+
 const booksReducer = (state = {}, action = {}) => {
   switch (action.type) {
     case CREATE:
