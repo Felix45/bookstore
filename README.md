@@ -73,6 +73,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on
+- Hat tip to [Microverse](https://bit.ly/MicroverseTN) for the [Bookstore API](https://bit.ly/3O50XmE) used in this project
 
 
 ## 📝 License
