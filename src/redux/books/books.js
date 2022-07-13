@@ -38,8 +38,6 @@ const booksReducer = (state = {}, action = {}) => {
   switch (action.type) {
     case CREATE:
       return action.book;
-    case REMOVE:
-      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
