@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Poppins:wght@500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--dark);
 }
 
 ul,
@@ -13,8 +20,13 @@ li {
   align-items: center;
 }
 
+nav {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--dark);
+}
+
 nav ul li {
-  padding: 0 1em;
+  padding: 0 2em;
   text-transform: uppercase;
 }
 
@@ -32,6 +44,7 @@ form input[type=text] {
   text-align: end;
   justify-content: center;
   height: 40px;
+  color: var(--button);
   border-radius: 50%;
   border: 1px solid var(--gray);
 }
@@ -39,7 +52,9 @@ form input[type=text] {
 :root {
   --white: #fff;
   --gray: #ddd;
+  --dark: #e8e8e8;
   --blue: dodgerblue;
+  --button: #0290ff;
 }
 
 .container-fluid {
@@ -59,6 +74,14 @@ form input[type=text] {
   justify-content: space-between;
 }
 
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.fw-bold {
+  font-weight: 800;
+}
+
 .m-1 {
   margin: 3em;
 }
@@ -71,36 +94,64 @@ form input[type=text] {
   padding: 1em;
 }
 
+.p-y {
+  padding: 2em 3em;
+}
+
 .title {
   padding: 1em 0;
   color: var(--gray);
   border-top: 2px solid var(--gray);
 }
 
+.text-primary {
+  color: var(--button);
+}
+
+.border {
+  border-left: 1px solid var(--dark);
+}
+
+.text-dull {
+  color: var(--dark);
+}
+
 .btn {
+  cursor: pointer;
   color: var(--white);
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: var(--button);
+  border: 1px solid var(--button);
+}
+
+.font-large {
+  font-size: x-large;
 }
 
 .progress {
   border-radius: 50%;
-  width: 3.25rem;
-  height: 3.25rem;
-  border: 5px solid #307bbe;
-  border-left-color: #e8e8e8;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 6px solid var(--button);
+  border-left-color: var(--dark);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .book-card {
   padding: 2em;
   border: 1px solid var(--gray);
+  background-color: var(--white);
 }
 
 .book-card-item {
   width: 40%;
+}
+
+.book-card-form {
+  padding: 2em 1em;
 }
 
 .action-list li button {

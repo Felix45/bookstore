@@ -14,9 +14,9 @@ class NavBar extends React.Component {
     ];
 
     return (
-      <nav className="d-flex space-between m-1 align-center">
+      <nav className="d-flex space-between p-y align-center">
         <div className="d-flex">
-          <h1>Bookstore CMS</h1>
+          <h1 className="text-primary fw-bold">Bookstore CMS</h1>
           <ul className="d-flex align-center">
             {
                 links.map((link) => (

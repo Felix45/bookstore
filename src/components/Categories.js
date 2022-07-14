@@ -9,9 +9,9 @@ const Categories = () => {
   return (
     <div className="book-card m-1 d-flex flex-column">
       <div>
-        <button type="button" onClick={() => { dispatch(checkStatus()); }}>Check Status</button>
+        <button type="button" className="btn p-1" onClick={() => { dispatch(checkStatus()); }}>Check Status</button>
       </div>
-      <div className="p-1">{category}</div>
+      <div className="m-t-1">{category}</div>
     </div>
   );
 };
