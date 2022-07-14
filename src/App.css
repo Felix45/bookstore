@@ -7,8 +7,17 @@
   font-family: 'Lato', sans-serif;
 }
 
+:root {
+  --white: #fff;
+  --gray: #ddd;
+  --dark: #e8e8e8;
+  --blue: dodgerblue;
+  --button: #0290ff;
+  --bgcolor: #fafafa;
+}
+
 body {
-  background-color: var(--dark);
+  background-color: var(--bgcolor);
 }
 
 ul,
@@ -47,14 +56,6 @@ form input[type=text] {
   color: var(--button);
   border-radius: 50%;
   border: 1px solid var(--gray);
-}
-
-:root {
-  --white: #fff;
-  --gray: #ddd;
-  --dark: #e8e8e8;
-  --blue: dodgerblue;
-  --button: #0290ff;
 }
 
 .container-fluid {
