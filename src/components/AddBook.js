@@ -25,8 +25,8 @@ const AddBook = () => {
 
   return (
     <div className="m-1">
-      <h2 className="title">Add new book</h2>
-      <form className="book-card d-flex container-fluid">
+      <h2 className="title"><strong>Add new book</strong></h2>
+      <form className="book-card book-card-form d-flex space-evenly container-fluid">
         <input className="p-1" type="text" name="title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter Book title" />
         <input className="p-1" type="text" name="author" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Enter Book author" />
         <input className="p-1 btn" type="submit" value="Add Book" onClick={handleBook} />

@@ -17,33 +17,31 @@ class Book extends React.Component {
       <li className="book-card d-flex space-between m-1">
         <div>
           <ul>
-            <li>{category}</li>
-            <li><h2>{title}</h2></li>
-            <li>{author}</li>
+            <li className="text-dull"><strong>{category}</strong></li>
+            <li className="m-t-1"><h2>{title}</h2></li>
+            <li className="text-primary">{author}</li>
           </ul>
           <Action id={id} />
         </div>
 
         <div className="d-flex space-between book-card-item">
-          <div className="d-flex">
+          <div className="d-flex font-large">
             <span className="progress" />
-            {20}
-            %
-            {' '}
-            <br />
-            {' '}
-            Completed
+            <div className="d-flex flex-column">
+              <span>20%</span>
+              <span className="text-dull">Completed</span>
+            </div>
           </div>
+          <div className="border" />
           <div>
-            <h4>CURRENT CHAPTER</h4>
-            <div>
-              Chapter
-              {1}
+            <h4 className="text-dull">CURRENT CHAPTER</h4>
+            <div className="m-t-1">
+              Chapter 3
               :
               Unknown
             </div>
             <div>
-              <button className="m-t-1" type="button">Update Progress</button>
+              <button className="p-1 btn m-t-1" type="button">Update Progress</button>
             </div>
           </div>
         </div>
