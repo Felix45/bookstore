@@ -13,6 +13,9 @@ class Book extends React.Component {
     const {
       title, author, category,
     } = book[0];
+    const currentChapter = title.split(' ').pop();
+    const progress = Math.floor(Math.random() * 101);
+    const chapter = Math.floor(Math.random() * 21);
     return (
       <li className="book-card d-flex space-between m-1">
         <div>
@@ -28,7 +31,10 @@ class Book extends React.Component {
           <div className="d-flex font-large">
             <span className="progress" />
             <div className="d-flex flex-column">
-              <span>20%</span>
+              <span>
+                {progress}
+                %
+              </span>
               <span className="text-dull">Completed</span>
             </div>
           </div>
@@ -36,9 +42,11 @@ class Book extends React.Component {
           <div>
             <h4 className="text-dull">CURRENT CHAPTER</h4>
             <div className="m-t-1">
-              Chapter 3
+              Chapter
+              {' '}
+              {chapter}
               :
-              Unknown
+              {`  ${currentChapter.charAt(0).toUpperCase()}${currentChapter.slice(1)}`}
             </div>
             <div>
               <button className="p-1 btn m-t-1" type="button">Update Progress</button>
